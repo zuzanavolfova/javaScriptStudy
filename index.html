@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container container--color1">
+        <h2 class="numbers">Numbers</h2>
+        <div class="numbers__const"></div>
+        <select name="sort" id="sort" onchange="sortUI()">
+            <option class="sort__item" value="0">Seřaď vzestupně</option>
+            <option class="sort__item" value="1">Seřaď sestupně</option>
+        </select>
+        <div class="numbers__field"></div>
+    </section>
+    <section class="container container--color2">
+        <h2 class="numbers">Fizz Buzz</h2>
+        <input class="fizzBuzz" type="number" name="fizzBuzz" id="fizzBuzz">
+            <button class="fizzBuzz__button" onclick="fizzBuzz()">FizzBuzz</button>
+            <div class="fizzBuzz__item"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
