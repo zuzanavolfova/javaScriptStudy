@@ -7,7 +7,7 @@ const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p
 let newAlphabet=[]
 
 // TODO Caesar's cipher ----------------------------------------------------------------------------------------------
-function pokus(s, k){
+function caesarCipher(s, k){
     newAlphabet=[...alphabet];
     // 1.1 find first letter
     // 1.2 remove first letter
@@ -39,4 +39,4 @@ function pokus(s, k){
     // console.log(result)
     return result}
 
-pokus("middle-Outz", 2)
+    caesarCipher("middle-Outz", 2)
