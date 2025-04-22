@@ -80,7 +80,7 @@ function caesarCipher(s, k){
             dataString = dataString.slice(position+1)
             result="YES"}
         }
-        console.log(result)
+        // console.log(result)
         return result
     }
 
