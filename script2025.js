@@ -62,3 +62,27 @@ function caesarCipher(s, k){
     }
 
     counterChanges("OOSDSSOSOSWEWSOSOSOSOSOSOSSSSOSOSOSS")
+
+
+    //TODO Check if contains pattern ----------------------------
+    // We say that a string contains the word pattern if a subsequence of its characters spell the word hackerrank. Remember that a subsequence maintains the order of characters selected from a sequence. 
+
+    function checkIfContain(s){
+        const pattern = "pattern";
+        let dataString = s
+        let result = "NO";
+        for(let i=0; i < pattern.length; i++){       
+            let position = dataString.indexOf(pattern[i])
+            if(position === -1){
+                result="NO";
+                break
+            } else {
+            dataString = dataString.slice(position+1)
+            result="YES"}
+        }
+        console.log(result)
+        return result
+    }
+
+    checkIfContain('ksdfhkjsdjj')
+    checkIfContain('paattefdgfdrnn')
