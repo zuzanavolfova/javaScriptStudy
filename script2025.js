@@ -40,3 +40,9 @@ function caesarCipher(s, k){
     return result}
 
     caesarCipher("middle-Outz", 2)
+
+    function counterChanges(s){
+        let pattern ="SOS";
+        //1. check if 3 letters are SOS 
+        //2. if not add +1 to result check each letter 
+    }
