@@ -91,4 +91,15 @@ function caesarCipher(s, k){
 
     let data=[1,5,68,2,15,454,874,25]
     let sortedData = data.sort(function(a,b){return a - b});
+
+    //TODO Consider an array of numeric strings where each string is a positive number with anywhere from to digits. Sort the array's elements in non-decreasing, or ascending order of their integer values and return the sorted array.
+
+    let dataString=["2","56","10"];
+    let dataSortedString =
+        dataString.sort((a,b)=>{
+            if(a.length === b.length){
+                return a.localeCompare(b)
+            } return a.length - b.length
+    })
+    // console.log(dataSortedString)
   
