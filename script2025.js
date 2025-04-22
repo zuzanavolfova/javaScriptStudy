@@ -123,3 +123,18 @@ function caesarCipher(s, k){
     }
     insertionSort1(101, [2, 4, 8, 12, 15, 19, 21, 24, 26, 29, 30, 32, 35, 36, 41, 44, 49, 52, 57, 58, 59, 64, 65, 68, 73, 77, 80, 82, 85, 88, 93, 97, 101, 105, 108, 111, 115, 118, 122, 127, 130, 131, 132, 134, 135, 136, 138, 141, 144, 146, 151, 153, 158, 160, 165, 169, 171, 176, 179, 184, 187, 190, 194, 197, 200, 205, 210, 215, 217, 222, 225, 230, 231, 236, 239, 243, 244, 246, 248, 253, 254, 256, 258, 262, 263, 267, 272, 274, 277, 280, 284, 285, 289, 291, 295, 297, 301, 305, 310, 312, 279])
     
+//TODO search position of sum
+// get total summary and array of numbers. Return position of numbers which sum is equal to summary.
+    function icecreamParlor(m, arr) {
+        let result = [];
+        let arrData = [...arr];
+        for(let j=0; j < arrData.length-1; j++){
+            for(let i = j+1; i <arrData.length; i++){
+                if((arrData[j] + arrData[i]) === m) {
+                result = [j+1, i+1]
+            }
+        }}
+        return result
+    }
+
+    icecreamParlor(4, [1,4,5,3,2])
