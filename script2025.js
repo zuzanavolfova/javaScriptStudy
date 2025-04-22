@@ -140,8 +140,8 @@ function caesarCipher(s, k){
     // icecreamParlor(4, [1,4,5,3,2])
 
 // TODO Given two arrays of integers, find which elements in the second array are missing from the first array. ------------------------------------------
-    const arrayA = [3696, 3739, 3714, 3719, 3687, 3732 ]
-    const arrayB = [3697, 3674, 3700, 3652, 3702, 3718, 3693, 3724, 3676, 3657, 3656, 3654, 3721, 3683]
+    const arrayA = [1, 3, 6, 10 ]
+    const arrayB = [1, 5, 6, 11, 12]
     function  missingNumbers(arr, brr){
         for(let i = 0; i <arr.length; i++){
             let isInArray = brr.includes(arr[i])
@@ -149,8 +149,7 @@ function caesarCipher(s, k){
                 brr.splice(brr.indexOf(arr[i]),1)
             }
         }
-    let result = [...new Set(brr.sort(function(a,b){return a - b}))]
-    // console.log(result)
+    let result = brr.sort(function(a,b){return a - b})
     return result
     }
     // missingNumbers(arrayA, arrayB)
