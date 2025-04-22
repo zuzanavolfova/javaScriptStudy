@@ -40,9 +40,25 @@ function caesarCipher(s, k){
     return result}
 
     caesarCipher("middle-Outz", 2)
-
+    
+    //TODO counter changes from pattern --------------------------------------------------------------------------------
     function counterChanges(s){
+        let result = 0;
         let pattern ="SOS";
-        //1. check if 3 letters are SOS 
-        //2. if not add +1 to result check each letter 
+        let k = 3;
+        let substringData = "";
+        for(let i = 0; i < s.length; i = i+3){
+            substringData= s.substring(i, k)
+            //1. check if 3 letters are SOS
+            //2. if not add +1 to result (for each letter) 
+            if(substringData != pattern){
+              for(let j = 0; j<3; j++){
+                if(substringData[j] !== pattern[j]){ result ++}
+              }
+            }
+            k = k + 3;
+        }        
+        return result
     }
+
+    counterChanges("OOSDSSOSOSWEWSOSOSOSOSOSOSSSSOSOSOSS")
