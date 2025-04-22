@@ -64,7 +64,7 @@ function caesarCipher(s, k){
     counterChanges("OOSDSSOSOSWEWSOSOSOSOSOSOSSSSOSOSOSS")
 
 
-    //TODO Check if contains pattern ----------------------------
+    //TODO Check if contains pattern -----------------------------------------------------------------------------------------
     // We say that a string contains the word pattern if a subsequence of its characters spell the word hackerrank. Remember that a subsequence maintains the order of characters selected from a sequence. 
 
     function checkIfContain(s){
@@ -86,3 +86,9 @@ function caesarCipher(s, k){
 
     checkIfContain('ksdfhkjsdjj')
     checkIfContain('paattefdgfdrnn')
+
+    //TODO sort data - numbers ----------------------------------------------------------------------
+
+    let data=[1,5,68,2,15,454,874,25]
+    let sortedData = data.sort(function(a,b){return a - b});
+  
