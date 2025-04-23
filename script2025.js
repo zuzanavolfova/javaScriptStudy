@@ -192,12 +192,12 @@ function caesarCipher(s, k){
             }
         }
         let result = [...new Set(containLetters)] // remove duplicities
-        console.log(result.sort())
-        console.log(result.length === 26 ? "pangram" : "not pangram");
+        // console.log(result.sort())
+        // console.log(result.length === 26 ? "pangram" : "not pangram");
     }
 
     // isPangram("We promptly judged antique ivory buckles for the next prize")
-    
+
     // TODO print the values of the array ----------------------------------------------------------------------------
     const shoppingCartArray = [
         { name: 'banana', qty: 2 },
