@@ -179,3 +179,21 @@ function caesarCipher(s, k){
         }
     }
     dayOfProgramer(2016)
+
+
+// TODO pangram - text consist of each letter of alphabet
+    function isPangram(text) {
+        const lowerCaseText = text.toLowerCase();
+        const containLetters = [];
+        
+        for (let item of lowerCaseText) {
+            if (item >= 'a' && item <= 'z') {
+                containLetters.push(item);
+            }
+        }
+        let result = [...new Set(containLetters)] // remove duplicities
+        console.log(result.sort())
+        console.log(result.length === 26 ? "pangram" : "not pangram");
+    }
+
+    // isPangram("We promptly judged antique ivory buckles for the next prize")
