@@ -215,3 +215,14 @@ function caesarCipher(s, k){
       for (let i = 0; i < shoppingCartArray.length; i++) {
         // console.log(shoppingCartArray2[i][Object.keys(shoppingCartArray2[i])[0]], shoppingCartArray2[i][Object.keys(shoppingCartArray2[i])[1]]);
       }
+
+      // TODO count array values - use reduce method
+    function bill(bill, k, b){
+        let billCopy = [...bill];
+        let sharedCosts = (billCopy.reduce((a,b)=> a + b,0) - billCopy[k])/2
+        console.log(sharedCosts, billCopy[k])
+        if((sharedCosts ) === b){
+            console.log("Bon Appetit")
+        } else console.log(b - (sharedCosts))
+    }
+    // bill([3,10,2,9], 1, 12 )
