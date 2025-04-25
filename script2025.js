@@ -226,3 +226,21 @@ function caesarCipher(s, k){
         } else console.log(b - (sharedCosts))
     }
     // bill([3,10,2,9], 1, 12 )
+
+    //TODO find how meny duplicates are in the array
+
+    function socks(n, ar) {
+        let array = [...ar];
+        let result = 0;
+        for(let i=0; i < array.length; i++){
+            for(let j = i+1; j < array.length; j++){
+                if(array[i]===array[j]){
+                    array.splice(j,1)
+                    result ++
+                    break
+                }
+            }
+        }
+        return result
+    }
+    // socks(10, [1, 1, 3, 1, 2, 1, 3, 3, 3, 3])
