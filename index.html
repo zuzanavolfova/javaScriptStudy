@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <section class="card">
+      <h2>Caesar Cipher</h2>
+      <div class="card__container">
+        <div class="card__container__inputs">
+          <div>
+            <input
+              type="text"
+              name="cipher"
+              id="cipher"
+              placeholder="Insert cipher to be encrypted"
+              class="card__container__input"
+            />
+            <span>Insert cipher to be encrypted</span>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="factorRotation"
+              id="factorRotation"
+              placeholder="Insert factor rotaion"
+              class="card__container__input"
+            />
+            <span>Insert cipher to be encrypted</span>
+          </div>
+          <button class="button-primary" onclick="caesarCipher()">
+            Encrypt
+          </button>
+        </div>
+        <div class="card__container__output"></div>
+      </div>
+    </section>
     <!-- <section class="container container--color1">
         <h2 class="numbers">Numbers</h2>
         <div class="numbers__const"></div>
@@ -16,14 +47,15 @@
             <option class="sort__item" value="1">Seřaď sestupně</option>
         </select>
         <div class="numbers__field"></div>
-    </section>
-    <section class="container container--color2">
-        <h2 class="numbers">Fizz Buzz</h2>
-        <input class="fizzBuzz" type="number" name="fizzBuzz" id="fizzBuzz">
-            <button class="fizzBuzz__button" onclick="fizzBuzz()">FizzBuzz</button>
-            <div class="fizzBuzz__item"></div>
     </section> -->
-    <script src="script2025.js"></script>
+    <!-- <section class="container container--color2">
+      <h2 class="numbers">Fizz Buzz</h2>
+      <input class="fizzBuzz" type="number" name="fizzBuzz" id="fizzBuzz" />
+      <button class="fizzBuzz__button" onclick="fizzBuzz()">FizzBuzz</button>
+      <div class="fizzBuzz__item"></div>
+    </section> -->
+    <script src="uiChanges.js"></script>
+    <script src="caesarsCipher.js"></script>
     <!-- <script src="script.js"></script> -->
-</body>
+  </body>
 </html>
