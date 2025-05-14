@@ -1,6 +1,10 @@
 :root {
   --primary-color: #005878;
   --placeholder-color: #484848;
+  --light-grey: #c3c2c2;
+  --text-light-grey: #a7a3a3;
+  --text-medium-grey: #615f5f;
+  --text-dark-grey: #434343;
 }
 
 html {
@@ -13,6 +17,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 26px;
+}
+
 h1,
 h2,
 h3 {
@@ -22,6 +30,7 @@ h3 {
 .card {
   padding: 16px;
   margin: 20px;
+  max-width: 480px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .card h2 {
@@ -72,5 +81,26 @@ button:hover {
 
 button.clicked {
   transform: scale(1.2);
-  background-color: var(--light-grey);
+  background-color: var(--placeholder-color);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: var(--text-dark-grey);
+  padding: 12px 0;
+  border-top: 1px solid var(--light-grey);
+}
+.footer__title {
+  color: var(--text-dark-grey);
+  font-weight: 600;
+}
+.footer__link {
+  color: var(--text-dark-grey);
+  text-decoration: none;
 }

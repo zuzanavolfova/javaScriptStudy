@@ -8,38 +8,42 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="card">
-      <h2>Caesar Cipher</h2>
-      <div class="card__container">
-        <div class="card__container__inputs">
-          <div>
-            <input
-              type="text"
-              name="cipher"
-              id="cipher"
-              placeholder="Insert cipher to be encrypted"
-              class="card__container__input"
-            />
-            <span>Insert cipher to be encrypted</span>
+    <header>
+      <h1>JavaScript, TypeScript study</h1>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Caesar Cipher</h2>
+        <div class="card__container">
+          <div class="card__container__inputs">
+            <div>
+              <input
+                type="text"
+                name="cipher"
+                id="cipher"
+                placeholder="Insert cipher to be encrypted"
+                class="card__container__input"
+              />
+              <span>Insert cipher to be encrypted</span>
+            </div>
+            <div>
+              <input
+                type="number"
+                name="factorRotation"
+                id="factorRotation"
+                placeholder="Insert factor rotaion"
+                class="card__container__input"
+              />
+              <span>Insert cipher to be encrypted</span>
+            </div>
+            <button class="button-primary" onclick="caesarCipher()">
+              Encrypt
+            </button>
           </div>
-          <div>
-            <input
-              type="number"
-              name="factorRotation"
-              id="factorRotation"
-              placeholder="Insert factor rotaion"
-              class="card__container__input"
-            />
-            <span>Insert cipher to be encrypted</span>
-          </div>
-          <button class="button-primary" onclick="caesarCipher()">
-            Encrypt
-          </button>
+          <div class="card__container__output"></div>
         </div>
-        <div class="card__container__output"></div>
-      </div>
-    </section>
-    <!-- <section class="container container--color1">
+      </section>
+      <!-- <section class="container container--color1">
         <h2 class="numbers">Numbers</h2>
         <div class="numbers__const"></div>
         <select name="sort" id="sort" onchange="sortUI()">
@@ -48,12 +52,27 @@
         </select>
         <div class="numbers__field"></div>
     </section> -->
-    <!-- <section class="container container--color2">
+      <!-- <section class="container container--color2">
       <h2 class="numbers">Fizz Buzz</h2>
       <input class="fizzBuzz" type="number" name="fizzBuzz" id="fizzBuzz" />
       <button class="fizzBuzz__button" onclick="fizzBuzz()">FizzBuzz</button>
       <div class="fizzBuzz__item"></div>
     </section> -->
+    </main>
+    <footer>
+      <div class="footer">
+        <span class="footer__title"> Zuzana Volfová</span>
+        <span> +420 728 881 941</span>
+        <a class="footer__link" href="mailto:zuzka.volfova@gmail.com"
+          >zuzka.volfova@gmail.com</a
+        >
+        <a
+          class="footer__link"
+          href="https://www.linkedin.com/in/zuzana-volfová"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
     <script src="uiChanges.js"></script>
     <script src="caesarsCipher.js"></script>
     <!-- <script src="script.js"></script> -->
