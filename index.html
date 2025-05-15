@@ -12,37 +12,66 @@
       <h1>JavaScript, TypeScript study</h1>
     </header>
     <main>
-      <section class="card">
-        <h2>Caesar Cipher</h2>
-        <div class="card__container">
-          <div class="card__container__inputs">
-            <div>
+      <section class="card" aria-labelledby="caesar-cipher-title">
+        <h2 id="caesar-cipher-title">Caesar Cipher</h2>
+        <div
+          class="card__container"
+          role="group"
+          aria-labelledby="caesar-cipher-title"
+        >
+          <form
+            class="card__container__inputs"
+            id="cipher-form"
+            aria-label="Caesar cipher inputs"
+          >
+            <div class="form-group">
               <input
                 type="text"
                 name="cipher"
                 id="cipher"
                 placeholder="Insert cipher to be encrypted"
                 class="card__container__input"
+                aria-labelledby="cipher-label"
+                aria-required="true"
+                autocomplete="off"
               />
-              <span>Insert cipher to be encrypted</span>
+              <label for="cipher" class="form-label" id="cipher-label"
+                >Insert cipher to be encrypted</label
+              >
             </div>
-            <div>
+            <div class="form-group">
               <input
                 type="number"
                 name="factorRotation"
                 id="factorRotation"
                 placeholder="Insert factor rotaion"
                 class="card__container__input"
+                aria-describedby="factorRotation-label"
+                aria-required="true"
               />
-              <span>Insert cipher to be encrypted</span>
+              <label for="cipher" class="form-label" id="factorRotation-label"
+                >Insert factor rotation</label
+              >
             </div>
-            <button class="button-primary" onclick="caesarCipher()">
+            <button
+              type="button"
+              class="button-primary"
+              id="encrypt-button"
+              onclick="caesarCipher()"
+              aria-label="Encrypt cipher text"
+            >
               Encrypt
             </button>
-          </div>
-          <div class="card__container__output"></div>
+          </form>
+          <div
+            class="card__container__output"
+            aria-live="polite"
+            role="region"
+            aria-label="Encryption result"
+          ></div>
         </div>
       </section>
+
       <!-- <section class="container container--color1">
         <h2 class="numbers">Numbers</h2>
         <div class="numbers__const"></div>

@@ -28,17 +28,12 @@ h3 {
   &__container {
     display: flex;
     margin: auto;
-
     &__inputs {
       width: 200px;
       margin: 18px;
       display: flex;
       flex-direction: column;
       gap: 16px;
-    }
-    & span {
-      font-size: small;
-      color: var(--placeholder-color);
     }
     &__input {
       height: 36px;
