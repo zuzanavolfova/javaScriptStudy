@@ -3,6 +3,7 @@
  * In the returned array, all numbers should be represented without leading zeros.
  * example: sortStringNUmber(["2", "56", "10", "001", "0"])
  */
+
 const removeLeadingZeros = (str) => {
   const result = str.replace(/^0+/, "");
   return result === "" ? "0" : result;

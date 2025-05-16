@@ -2,6 +2,7 @@
  * Return true is text consist of each letter of alphabet, if not return false
  * example:  isPangram("We promptly judged antique ivory buckles for the next prize")
  */
+
 function isPangram(text) {
   let containLetters = [];
 

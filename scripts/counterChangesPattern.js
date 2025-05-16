@@ -6,6 +6,7 @@
  * determine how many letters of the SOS message have been changed by radiation.
  * example: counterChangesFromPattern("KOSPOSSHH", "SOS");
  */
+
 function counterChangesFromPattern(message, pattern) {
   let result = 0;
   const patternLength = pattern.length;

@@ -4,6 +4,7 @@
  *      checkIfTextContainPattern("ksdfhkjsdjj", "pattern");
  *      checkIfTextContainPattern("paattefdgfdrnn", "pattern");
  */
+
 function checkIfTextContainPattern(text, pattern) {
   let remainingText = text;
 

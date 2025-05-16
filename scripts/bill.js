@@ -16,5 +16,5 @@ function bill(sum, k, b) {
 
   if (sharedCosts === b) {
     console.log("Bon Appetit");
-  } else console.log(b - sharedCosts);
+  } else console.log("Brian owes Anna " + b - sharedCosts);
 }
